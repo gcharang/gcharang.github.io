@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Smart Chains Guide for Notary Nodes | Komodo Documentation</title>
+    <meta name="generator" content="VuePress 1.7.0">
+    <link rel="icon" href="/KMD_Mark_Black.png">
+    <meta name="description" content="If you were looking for the readme how to setup the Smart Chains, don't look further. It is integrated into Komodo now.">
+    <meta name="twitter:title" content="Smart Chains Guide for Notary Nodes">
+    <meta name="twitter:description" content="If you were looking for the readme how to setup the Smart Chains, don't look further. It is integrated into Komodo now.">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://docs.komodoplatform.com/notary/smartchains-guide-Komodo-Notary-Node.html">
+    <meta name="twitter:site" content="@komodoplatform">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Smart Chains Guide for Notary Nodes">
+    <meta property="og:description" content="If you were looking for the readme how to setup the Smart Chains, don't look further. It is integrated into Komodo now.">
+    <meta property="og:url" content="https://docs.komodoplatform.com/notary/smartchains-guide-Komodo-Notary-Node.html">
+    <meta property="og:site_name" content="Komodo Documentation">
+    <meta itemprop="name" content="Smart Chains Guide for Notary Nodes">
+    <meta itemprop="description" content="If you were looking for the readme how to setup the Smart Chains, don't look further. It is integrated into Komodo now.">
+    <meta name="twitter:image" content="https://developers.komodoplatform.com/start-here-pics/Dev_Docs_Introduction_small.png">
+    <link rel="preload" href="/assets/css/0.styles.ff356d1b.css" as="style"><link rel="preload" href="/assets/js/app.ad3c4262.js" as="script"><link rel="preload" href="/assets/js/5.f54d08db.js" as="script"><link rel="preload" href="/assets/js/3.a7c42d7c.js" as="script"><link rel="preload" href="/assets/js/231.413a945b.js" as="script"><link rel="prefetch" href="/assets/js/10.6817246c.js"><link rel="prefetch" href="/assets/js/100.6b2f0b4a.js"><link rel="prefetch" href="/assets/js/101.9dcefe0c.js"><link rel="prefetch" href="/assets/js/102.7ab75ed4.js"><link rel="prefetch" href="/assets/js/103.d74518c9.js"><link rel="prefetch" href="/assets/js/104.866158a2.js"><link rel="prefetch" href="/assets/js/105.593db546.js"><link rel="prefetch" href="/assets/js/106.d67890b9.js"><link rel="prefetch" href="/assets/js/107.e52ff518.js"><link rel="prefetch" href="/assets/js/108.24f9438a.js"><link rel="prefetch" href="/assets/js/109.5c3af958.js"><link rel="prefetch" href="/assets/js/11.1d9af756.js"><link rel="prefetch" href="/assets/js/110.310f44f2.js"><link rel="prefetch" href="/assets/js/111.bcc3051e.js"><link rel="prefetch" href="/assets/js/112.d258bd7b.js"><link rel="prefetch" href="/assets/js/113.fcca9bc6.js"><link rel="prefetch" href="/assets/js/114.e97ad5fb.js"><link rel="prefetch" href="/assets/js/115.5341f1e4.js"><link rel="prefetch" href="/assets/js/116.c4bd240f.js"><link rel="prefetch" href="/assets/js/117.4cc0be52.js"><link rel="prefetch" href="/assets/js/118.2a0ecde5.js"><link rel="prefetch" href="/assets/js/119.8d237dd9.js"><link rel="prefetch" href="/assets/js/12.3540cf89.js"><link rel="prefetch" href="/assets/js/120.e904a172.js"><link rel="prefetch" href="/assets/js/121.73317564.js"><link rel="prefetch" href="/assets/js/122.1465dce8.js"><link rel="prefetch" href="/assets/js/123.317cae3e.js"><link rel="prefetch" href="/assets/js/124.d4a6dd6c.js"><link rel="prefetch" href="/assets/js/125.1c849a2a.js"><link rel="prefetch" href="/assets/js/126.a9d71e04.js"><link rel="prefetch" href="/assets/js/127.b00f131d.js"><link rel="prefetch" href="/assets/js/128.447b4440.js"><link rel="prefetch" href="/assets/js/129.04775576.js"><link rel="prefetch" href="/assets/js/13.113c1c1a.js"><link rel="prefetch" href="/assets/js/130.0659beca.js"><link rel="prefetch" href="/assets/js/131.f4b4c705.js"><link rel="prefetch" href="/assets/js/132.bdb8561d.js"><link rel="prefetch" href="/assets/js/133.3ab7c647.js"><link rel="prefetch" href="/assets/js/134.41ecbaf4.js"><link rel="prefetch" href="/assets/js/135.570c748a.js"><link rel="prefetch" href="/assets/js/136.a3c835b0.js"><link rel="prefetch" href="/assets/js/137.d04637b5.js"><link rel="prefetch" href="/assets/js/138.88b86f80.js"><link rel="prefetch" href="/assets/js/139.806c028f.js"><link rel="prefetch" href="/assets/js/14.cf0cd771.js"><link rel="prefetch" href="/assets/js/140.2962c6c5.js"><link rel="prefetch" href="/assets/js/141.0e1d2998.js"><link rel="prefetch" href="/assets/js/142.ea80dc91.js"><link rel="prefetch" href="/assets/js/143.d5f38b73.js"><link rel="prefetch" href="/assets/js/144.c767de2d.js"><link rel="prefetch" href="/assets/js/145.3bcbdab6.js"><link rel="prefetch" href="/assets/js/146.c12a1489.js"><link rel="prefetch" href="/assets/js/147.ef7502a1.js"><link rel="prefetch" href="/assets/js/148.f7d50679.js"><link rel="prefetch" href="/assets/js/149.83606e62.js"><link rel="prefetch" href="/assets/js/15.c9a2fa01.js"><link rel="prefetch" href="/assets/js/150.e4df8602.js"><link rel="prefetch" href="/assets/js/151.f168de65.js"><link rel="prefetch" href="/assets/js/152.6dac74f3.js"><link rel="prefetch" href="/assets/js/153.511201bc.js"><link rel="prefetch" href="/assets/js/154.6461a8d9.js"><link rel="prefetch" href="/assets/js/155.4b7912ee.js"><link rel="prefetch" href="/assets/js/156.ef8f67c1.js"><link rel="prefetch" href="/assets/js/157.e0b04708.js"><link rel="prefetch" href="/assets/js/158.e1a8e2ef.js"><link rel="prefetch" href="/assets/js/159.baaac73a.js"><link rel="prefetch" href="/assets/js/16.9eba5d38.js"><link rel="prefetch" href="/assets/js/160.85be0c94.js"><link rel="prefetch" href="/assets/js/161.2fb0cfa0.js"><link rel="prefetch" href="/assets/js/162.de18aea7.js"><link rel="prefetch" href="/assets/js/163.e569796d.js"><link rel="prefetch" href="/assets/js/164.30bde6ad.js"><link rel="prefetch" href="/assets/js/165.b0fa259a.js"><link rel="prefetch" href="/assets/js/166.ecd26a75.js"><link rel="prefetch" href="/assets/js/167.540c1e45.js"><link rel="prefetch" href="/assets/js/168.81103e1c.js"><link rel="prefetch" href="/assets/js/169.e39de51a.js"><link rel="prefetch" href="/assets/js/17.1a03963f.js"><link rel="prefetch" href="/assets/js/170.51d514f0.js"><link rel="prefetch" href="/assets/js/171.fe732367.js"><link rel="prefetch" href="/assets/js/172.1ba47af8.js"><link rel="prefetch" href="/assets/js/173.85e93700.js"><link rel="prefetch" href="/assets/js/174.db530977.js"><link rel="prefetch" href="/assets/js/175.2b46de99.js"><link rel="prefetch" href="/assets/js/176.ad35e05a.js"><link rel="prefetch" href="/assets/js/177.7d37053c.js"><link rel="prefetch" href="/assets/js/178.4f959a9f.js"><link rel="prefetch" href="/assets/js/179.b8cc9665.js"><link rel="prefetch" href="/assets/js/18.1e7abd24.js"><link rel="prefetch" href="/assets/js/180.ca6a1a09.js"><link rel="prefetch" href="/assets/js/181.29078538.js"><link rel="prefetch" href="/assets/js/182.676b510e.js"><link rel="prefetch" href="/assets/js/183.6c712267.js"><link rel="prefetch" href="/assets/js/184.15c8f732.js"><link rel="prefetch" href="/assets/js/185.5b72d4a4.js"><link rel="prefetch" href="/assets/js/186.274cc865.js"><link rel="prefetch" href="/assets/js/187.6625be2a.js"><link rel="prefetch" href="/assets/js/188.9b2cd4b7.js"><link rel="prefetch" href="/assets/js/189.34b8265f.js"><link rel="prefetch" href="/assets/js/19.474ec631.js"><link rel="prefetch" href="/assets/js/190.bd8b0246.js"><link rel="prefetch" href="/assets/js/191.e48eac2f.js"><link rel="prefetch" href="/assets/js/192.f5a2a981.js"><link rel="prefetch" href="/assets/js/193.0b81015c.js"><link rel="prefetch" href="/assets/js/194.211e58fd.js"><link rel="prefetch" href="/assets/js/195.08c92e1b.js"><link rel="prefetch" href="/assets/js/196.f9ec48d8.js"><link rel="prefetch" href="/assets/js/197.16a7f81d.js"><link rel="prefetch" href="/assets/js/198.f4f74639.js"><link rel="prefetch" href="/assets/js/199.ae02237e.js"><link rel="prefetch" href="/assets/js/20.a001b4bd.js"><link rel="prefetch" href="/assets/js/200.66ba61f2.js"><link rel="prefetch" href="/assets/js/201.af480fe4.js"><link rel="prefetch" href="/assets/js/202.d1d6ca1a.js"><link rel="prefetch" href="/assets/js/203.36d749ed.js"><link rel="prefetch" href="/assets/js/204.fcf4b58e.js"><link rel="prefetch" href="/assets/js/205.86814a37.js"><link rel="prefetch" href="/assets/js/206.3c8b9956.js"><link rel="prefetch" href="/assets/js/207.1c2e94e9.js"><link rel="prefetch" href="/assets/js/208.d3e9ebc5.js"><link rel="prefetch" href="/assets/js/209.4b85d8ba.js"><link rel="prefetch" href="/assets/js/21.eeca9f47.js"><link rel="prefetch" href="/assets/js/210.e2ccfe8b.js"><link rel="prefetch" href="/assets/js/211.2bf74d4b.js"><link rel="prefetch" href="/assets/js/212.77c90131.js"><link rel="prefetch" href="/assets/js/213.a362473f.js"><link rel="prefetch" href="/assets/js/214.a23699be.js"><link rel="prefetch" href="/assets/js/215.78a7d9c0.js"><link rel="prefetch" href="/assets/js/216.2dfda1fd.js"><link rel="prefetch" href="/assets/js/217.c777b198.js"><link rel="prefetch" href="/assets/js/218.2475a012.js"><link rel="prefetch" href="/assets/js/219.4c4035f2.js"><link rel="prefetch" href="/assets/js/22.397d8826.js"><link rel="prefetch" href="/assets/js/220.008b2edf.js"><link rel="prefetch" href="/assets/js/221.af2b0e1c.js"><link rel="prefetch" href="/assets/js/222.a48ea522.js"><link rel="prefetch" href="/assets/js/223.825c844b.js"><link rel="prefetch" href="/assets/js/224.d159bd62.js"><link rel="prefetch" href="/assets/js/225.f2068be0.js"><link rel="prefetch" href="/assets/js/226.53a98c18.js"><link rel="prefetch" href="/assets/js/227.0183099b.js"><link rel="prefetch" href="/assets/js/228.d102bd17.js"><link rel="prefetch" href="/assets/js/229.df069c1d.js"><link rel="prefetch" href="/assets/js/23.24ac16de.js"><link rel="prefetch" href="/assets/js/230.e116ca8b.js"><link rel="prefetch" href="/assets/js/232.f4957a5b.js"><link rel="prefetch" href="/assets/js/233.9f6ce9aa.js"><link rel="prefetch" href="/assets/js/234.8a4ea66f.js"><link rel="prefetch" href="/assets/js/235.b897638a.js"><link rel="prefetch" href="/assets/js/236.d2717f50.js"><link rel="prefetch" href="/assets/js/237.9b887ef9.js"><link rel="prefetch" href="/assets/js/238.0bfc78cc.js"><link rel="prefetch" href="/assets/js/239.36716223.js"><link rel="prefetch" href="/assets/js/24.5861fcde.js"><link rel="prefetch" href="/assets/js/240.11bdf05f.js"><link rel="prefetch" href="/assets/js/241.578411ea.js"><link rel="prefetch" href="/assets/js/242.b3d53155.js"><link rel="prefetch" href="/assets/js/243.8423581b.js"><link rel="prefetch" href="/assets/js/244.d6cd7a33.js"><link rel="prefetch" href="/assets/js/245.768bbd8b.js"><link rel="prefetch" href="/assets/js/246.e307ff36.js"><link rel="prefetch" href="/assets/js/247.3d47dd29.js"><link rel="prefetch" href="/assets/js/248.56678fdc.js"><link rel="prefetch" href="/assets/js/249.c1e6f90f.js"><link rel="prefetch" href="/assets/js/25.3dad9fdc.js"><link rel="prefetch" href="/assets/js/250.64a0f30c.js"><link rel="prefetch" href="/assets/js/251.94f126fc.js"><link rel="prefetch" href="/assets/js/252.ab7ddc07.js"><link rel="prefetch" href="/assets/js/253.91ff5de6.js"><link rel="prefetch" href="/assets/js/254.8c981a25.js"><link rel="prefetch" href="/assets/js/255.76afaac1.js"><link rel="prefetch" href="/assets/js/256.e3ce726b.js"><link rel="prefetch" href="/assets/js/26.7b21d47e.js"><link rel="prefetch" href="/assets/js/27.da6dad3a.js"><link rel="prefetch" href="/assets/js/28.be7bc81b.js"><link rel="prefetch" href="/assets/js/29.796c5999.js"><link rel="prefetch" href="/assets/js/30.f4c4d8df.js"><link rel="prefetch" href="/assets/js/31.f42b9bc6.js"><link rel="prefetch" href="/assets/js/32.040bd4ec.js"><link rel="prefetch" href="/assets/js/33.d537220d.js"><link rel="prefetch" href="/assets/js/34.6f8d781a.js"><link rel="prefetch" href="/assets/js/35.bd8476d6.js"><link rel="prefetch" href="/assets/js/36.3162d164.js"><link rel="prefetch" href="/assets/js/37.e6588725.js"><link rel="prefetch" href="/assets/js/38.02cff9a2.js"><link rel="prefetch" href="/assets/js/39.7092a3cb.js"><link rel="prefetch" href="/assets/js/4.abd5de56.js"><link rel="prefetch" href="/assets/js/40.94ef25d0.js"><link rel="prefetch" href="/assets/js/41.c1d37f0c.js"><link rel="prefetch" href="/assets/js/42.f15bdda6.js"><link rel="prefetch" href="/assets/js/43.59c8188f.js"><link rel="prefetch" href="/assets/js/44.bf62f281.js"><link rel="prefetch" href="/assets/js/45.845c6fee.js"><link rel="prefetch" href="/assets/js/46.adb9b233.js"><link rel="prefetch" href="/assets/js/47.5abd8d15.js"><link rel="prefetch" href="/assets/js/48.df432e0a.js"><link rel="prefetch" href="/assets/js/49.2b9f691c.js"><link rel="prefetch" href="/assets/js/50.a80f88a0.js"><link rel="prefetch" href="/assets/js/51.304911c0.js"><link rel="prefetch" href="/assets/js/52.5536c70f.js"><link rel="prefetch" href="/assets/js/53.7d4f5990.js"><link rel="prefetch" href="/assets/js/54.04dfe4d4.js"><link rel="prefetch" href="/assets/js/55.efef3cc9.js"><link rel="prefetch" href="/assets/js/56.1c095187.js"><link rel="prefetch" href="/assets/js/57.f9c6751b.js"><link rel="prefetch" href="/assets/js/58.bdd4d324.js"><link rel="prefetch" href="/assets/js/59.e93a2e20.js"><link rel="prefetch" href="/assets/js/6.9204506d.js"><link rel="prefetch" href="/assets/js/60.85687c41.js"><link rel="prefetch" href="/assets/js/61.76c902e6.js"><link rel="prefetch" href="/assets/js/62.41c862c3.js"><link rel="prefetch" href="/assets/js/63.9d788b35.js"><link rel="prefetch" href="/assets/js/64.5caa17cb.js"><link rel="prefetch" href="/assets/js/65.f5e751a2.js"><link rel="prefetch" href="/assets/js/66.2b8dc1ac.js"><link rel="prefetch" href="/assets/js/67.8b89ce21.js"><link rel="prefetch" href="/assets/js/68.0328ba29.js"><link rel="prefetch" href="/assets/js/69.06a2099b.js"><link rel="prefetch" href="/assets/js/7.a5e6a425.js"><link rel="prefetch" href="/assets/js/70.5d87e3bb.js"><link rel="prefetch" href="/assets/js/71.ba1fe9d4.js"><link rel="prefetch" href="/assets/js/72.e6767ed5.js"><link rel="prefetch" href="/assets/js/73.ddcd4ae1.js"><link rel="prefetch" href="/assets/js/74.98c9b789.js"><link rel="prefetch" href="/assets/js/75.0e4b0ba1.js"><link rel="prefetch" href="/assets/js/76.3452f952.js"><link rel="prefetch" href="/assets/js/77.0c48b15a.js"><link rel="prefetch" href="/assets/js/78.d2366dfc.js"><link rel="prefetch" href="/assets/js/79.5d3aea3f.js"><link rel="prefetch" href="/assets/js/8.d1b789e5.js"><link rel="prefetch" href="/assets/js/80.c37904f3.js"><link rel="prefetch" href="/assets/js/81.4eda59f8.js"><link rel="prefetch" href="/assets/js/82.9e313510.js"><link rel="prefetch" href="/assets/js/83.70d14cbc.js"><link rel="prefetch" href="/assets/js/84.e9ffea11.js"><link rel="prefetch" href="/assets/js/85.cc4d285c.js"><link rel="prefetch" href="/assets/js/86.88b8f4c6.js"><link rel="prefetch" href="/assets/js/87.6d24e3ab.js"><link rel="prefetch" href="/assets/js/88.f39d6956.js"><link rel="prefetch" href="/assets/js/89.d86a4584.js"><link rel="prefetch" href="/assets/js/9.1e0a5cc8.js"><link rel="prefetch" href="/assets/js/90.a6d8cbc5.js"><link rel="prefetch" href="/assets/js/91.c61dcc09.js"><link rel="prefetch" href="/assets/js/92.3bd91996.js"><link rel="prefetch" href="/assets/js/93.4d95a1bc.js"><link rel="prefetch" href="/assets/js/94.0eb8c482.js"><link rel="prefetch" href="/assets/js/95.db675a61.js"><link rel="prefetch" href="/assets/js/96.68977e0c.js"><link rel="prefetch" href="/assets/js/97.6d29c90e.js"><link rel="prefetch" href="/assets/js/98.2b5c9bae.js"><link rel="prefetch" href="/assets/js/99.f128e365.js"><link rel="prefetch" href="/assets/js/vendors~docsearch.af4f3d85.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.ff356d1b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/KMD_Horiz_White.svg" alt="Komodo Documentation" class="logo"></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <nav class="nav-links can-hide"><div class="nav-item"><a href="/basic-docs/start-here/outline-for-new-developers.html" class="nav-link">
+  Start Here
+</a></div><div class="nav-item"><a href="/basic-docs/smart-chains/introduction-to-smart-chain-documentation.html" class="nav-link">
+  Smart Chain Essentials
+</a></div><div class="nav-item"><a href="/basic-docs/antara/introduction-to-antara.html" class="nav-link">
+  Antara Framework
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex/introduction-to-atomicdex.html" class="nav-link">
+  AtomicDEX
+</a></div><div class="nav-item"><a href="/komodo/installation.html" class="nav-link">
+  Komodo
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Guides" class="dropdown-title"><span class="title">Guides</span> <span class="arrow down"></span></button> <button type="button" aria-label="Guides" class="mobile-dropdown-title"><span class="title">Guides</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cc-jl/introduction.html" class="nav-link">
+  CC Book
+</a></li><li class="dropdown-item"><!----> <a href="/notary/setup-Komodo-Notary-Node.html" class="nav-link">
+  Notary Nodes
+</a></li><li class="dropdown-item"><!----> <a href="/mmV1/introduction.html" class="nav-link">
+  Marketmaker V1
+</a></li><li class="dropdown-item"><!----> <a href="/basic-docs/smart-chains/smart-chain-setup/nspv.html" class="nav-link">
+  nSPV
+</a></li><li class="dropdown-item"><!----> <a href="/gui/agama/introduction.html" class="nav-link">
+  Agama
+</a></li><li class="dropdown-item"><!----> <a href="/qa/debug-Komodo.html" class="nav-link">
+  QA and Testing
+</a></li><li class="dropdown-item"><!----> <a href="/whitepaper/introduction.html" class="nav-link">
+  Whitepaper
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Resources" class="dropdown-title"><span class="title">Resources</span> <span class="arrow down"></span></button> <button type="button" aria-label="Resources" class="mobile-dropdown-title"><span class="title">Resources</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/resources/list-all-KomodoPlatform-repos-links.html" class="nav-link">
+  Komodo Platform
+</a></li><li class="dropdown-item"><!----> <a href="/resources/third-party-repos-resources.html" class="nav-link">
+  Third Party
+</a></li></ul></div></div><div class="nav-item"><a href="https://komodoplatform.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  KomodoPlatform.com
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/komodoplatform/Documentation" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><nav class="nav-links"><div class="nav-item"><a href="/basic-docs/start-here/outline-for-new-developers.html" class="nav-link">
+  Start Here
+</a></div><div class="nav-item"><a href="/basic-docs/smart-chains/introduction-to-smart-chain-documentation.html" class="nav-link">
+  Smart Chain Essentials
+</a></div><div class="nav-item"><a href="/basic-docs/antara/introduction-to-antara.html" class="nav-link">
+  Antara Framework
+</a></div><div class="nav-item"><a href="/basic-docs/atomicdex/introduction-to-atomicdex.html" class="nav-link">
+  AtomicDEX
+</a></div><div class="nav-item"><a href="/komodo/installation.html" class="nav-link">
+  Komodo
+</a></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Guides" class="dropdown-title"><span class="title">Guides</span> <span class="arrow down"></span></button> <button type="button" aria-label="Guides" class="mobile-dropdown-title"><span class="title">Guides</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/cc-jl/introduction.html" class="nav-link">
+  CC Book
+</a></li><li class="dropdown-item"><!----> <a href="/notary/setup-Komodo-Notary-Node.html" class="nav-link">
+  Notary Nodes
+</a></li><li class="dropdown-item"><!----> <a href="/mmV1/introduction.html" class="nav-link">
+  Marketmaker V1
+</a></li><li class="dropdown-item"><!----> <a href="/basic-docs/smart-chains/smart-chain-setup/nspv.html" class="nav-link">
+  nSPV
+</a></li><li class="dropdown-item"><!----> <a href="/gui/agama/introduction.html" class="nav-link">
+  Agama
+</a></li><li class="dropdown-item"><!----> <a href="/qa/debug-Komodo.html" class="nav-link">
+  QA and Testing
+</a></li><li class="dropdown-item"><!----> <a href="/whitepaper/introduction.html" class="nav-link">
+  Whitepaper
+</a></li></ul></div></div><div class="nav-item"><div class="dropdown-wrapper"><button type="button" aria-label="Resources" class="dropdown-title"><span class="title">Resources</span> <span class="arrow down"></span></button> <button type="button" aria-label="Resources" class="mobile-dropdown-title"><span class="title">Resources</span> <span class="arrow right"></span></button> <ul class="nav-dropdown" style="display:none;"><li class="dropdown-item"><!----> <a href="/resources/list-all-KomodoPlatform-repos-links.html" class="nav-link">
+  Komodo Platform
+</a></li><li class="dropdown-item"><!----> <a href="/resources/third-party-repos-resources.html" class="nav-link">
+  Third Party
+</a></li></ul></div></div><div class="nav-item"><a href="https://komodoplatform.com" target="_blank" rel="noopener noreferrer" class="nav-link external">
+  KomodoPlatform.com
+  <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></div> <a href="https://github.com/komodoplatform/Documentation" target="_blank" rel="noopener noreferrer" class="repo-link">
+    Github
+    <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></nav>  <ul class="sidebar-links"><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading open"><span>Basics</span> <span class="arrow down"></span></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/notary/setup-Komodo-Notary-Node.html" class="sidebar-link">Setup Komodo Notary Node</a></li><li><a href="/notary/update-Komodo-manually.html" class="sidebar-link">How to update Komodo</a></li><li><a href="/notary/split-utxo-for-notarization.html" class="sidebar-link">How to Split UTXO for Notarization</a></li><li><a href="/notary/generate-privkeys-third-party-coins-from-passphrase.html" class="sidebar-link">How to Generate Address and Private Key (WIF) for 3rd Party Coins Using Passphrase</a></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="smart-chains-guide-for-notary-nodes"><a href="#smart-chains-guide-for-notary-nodes" class="header-anchor">#</a> Smart Chains Guide for Notary Nodes</h1> <p><strong>If you were looking for the readme how to setup the Smart Chains, don't look further. It is integrated into Komodo now.</strong></p> <p>This is a small troubleshooting page for problems that may be encountered while starting Smart Chains.</p> <h2 id="how-do-i-start-the-smart-chains"><a href="#how-do-i-start-the-smart-chains" class="header-anchor">#</a> How do I start the Smart Chains?</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/komodo/src
+./assetchains
+</code></pre></div><h2 id="clear-all-smart-chains-data"><a href="#clear-all-smart-chains-data" class="header-anchor">#</a> Clear all Smart Chains' data</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/komodo/src
+./clearassets
+</code></pre></div><h2 id="i-get-error-cannot-obtain-a-lock-on-data-directory-home-komodo-komodo-revs-zcash-is-probably-already-running-when-i-run-it"><a href="#i-get-error-cannot-obtain-a-lock-on-data-directory-home-komodo-komodo-revs-zcash-is-probably-already-running-when-i-run-it" class="header-anchor">#</a> I get &quot;Error: Cannot obtain a lock on data directory /home/komodo/.komodo/REVS. Zcash is probably already running.&quot; when I run it</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/komodo/src
+fiat/revs stop
+</code></pre></div><h2 id="how-can-i-see-if-i-m-in-sync"><a href="#how-can-i-see-if-i-m-in-sync" class="header-anchor">#</a> How can I see if I'm in sync?</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/komodo/src
+./fiat-cli getbestblockhash
+</code></pre></div><p>This should result in:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>revs
+00004aae197360d4b1ee39ae774c53f5dcfe364e62bca9c08d3371c8048f692c
+supernet
+00001353826cb50312f978c750e379b3455b9d31d0d44b565fceeac9bde2b7a8
+dex
+000017362eb5e3695ce93cc98d30c61c4c711b6d729c485c708e02db8c2ae441
+pangea
+0556228845802eae9c344f1a7f07f4c81e6f9997a3d2e65665c52a5ac49717c0
+jumblr
+00016572fb1a1685d1988a3bd65c27b0f48aac415f71b4a26c51c4659015d8aa
+bet
+008d0fdab3e06ea7e06205c92da824a9ab3e04bc681b8b4e82322025d8dfa699
+crypto
+015ccc340cc2f378c556c990fb8a16ffe08f46b70294d642eef99ce660e1fb38
+hodl
+0b28d41c4e05cb3a6a129307254004580c46be17b7de152b9a5614424f8a3d98
+mshark
+00017a755bada0e09f5948b362a8489013bded0e2d071fccf0803b1203621aee
+bots
+00009e236c58026fcd379d93e172fa080ef61bc711483e0cbb90e16810b09227
+mgw
+05e37ff5dd6ad6c56fd4c91e6b58c9483ef0c1cf29cf3b3ddd81e6eb91af1436
+coqui
+00042e300f93f1647021a5bb3c4a2539e2fb7b1ff0e9643d32311f90414db9b5
+wlc
+02aab4d9db7341c0e4fcf92d1fa5338516334dba1988425a94614753cf7689f8
+kv
+006184a18c57effb2351771af83b2c8d9a780389829006253eded255199c6743
+ceal
+00609c071d40ebc299ae00272644f55801c8b47bb802ba357f3f9ce73fb87ccf
+mesh
+01f054a9090059608243e78f9ded82e534199f9d9f89fd61e50be49a8b588ac1
+mnz
+01985d6c1ecc63a22f0e653332a1cea32a6ddaebff43a2e3fd0db8afa64ac405
+axo
+0824de6894ec0c0135c1254da1a1f46581b0f5a75735d4331f8e29247fb30eeb
+etomic
+05eda4337d5d4546316cc2370a08240c49c404946a9f8b71ca66489fed2b9095
+btch
+0761193258390efe9b4d4041b29db2f908a8a7cc40d757c2574d980e85403201
+pizza
+048bacc5af768dc1ed5871a5abdf6783afe90c8bba621ec1731345d60ed1885a
+beer
+0cc4507dfd4aedfcc151d6c70d1d783a05fad0a41a89acc062e51724138aa2f9
+vote2018
+071edb56f1d0bed30af57268bb5468008ad7975d4986781f729daecfb462a8c8
+ninja
+0b3aac6506fc2bbd1f4ea4d27366fca44bbac31718be3681e9e8535c5af47c0d
+oot
+0d283df2483c57aa95c287304070488cb89a025b8a09ebcf0d9186f1e964bc13
+bntn
+08ffe7c25ad1b43700b301ba0d42195e63303bfd465112db91a4d8c7afa20af6
+</code></pre></div><h2 id="i-am-not-in-sync-with-a-few-hashes-what-do-i-have-to-do-now"><a href="#i-am-not-in-sync-with-a-few-hashes-what-do-i-have-to-do-now" class="header-anchor">#</a> I am not in sync with a few hashes. what do I have to do now?</h2> <p>Stop the corresponding fiat value and start it again. For instance REVS:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/komodo/src
+fiat/revs stop
+<span class="token function">rm</span> -rf ~/.komodo/REVS
+./komodod -ac_name<span class="token operator">=</span>REVS -ac_supply<span class="token operator">=</span><span class="token number">1300000</span> -addnode<span class="token operator">=</span><span class="token number">78.47</span>.196.146 <span class="token variable">$1</span> <span class="token operator">&amp;</span>
+</code></pre></div><h2 id="it-is-running-multiple-komodod-s-when-i-look-into-h-top-is-that-normal"><a href="#it-is-running-multiple-komodod-s-when-i-look-into-h-top-is-that-normal" class="header-anchor">#</a> It is running multiple komodod's when I look into (h)top, is that normal?</h2> <p>Yes, each asset value starts a komodod task</p> <h2 id="how-to-stop-all-of-them"><a href="#how-to-stop-all-of-them" class="header-anchor">#</a> How to stop all of them?</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/komodo/src
+./fiat-cli stop
+</code></pre></div><h2 id="i-receive-error-i-1-vs-n-2-in-the-output-when-i-start-assetchains"><a href="#i-receive-error-i-1-vs-n-2-in-the-output-when-i-start-assetchains" class="header-anchor">#</a> I receive &quot;error i.1 vs n.2&quot; in the output when I start ./assetchains.</h2> <p>Harmless errors, no problem with it. Let it run.</p> <h2 id="i-can-t-get-it-to-run"><a href="#i-can-t-get-it-to-run" class="header-anchor">#</a> I can't get it to run?</h2> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token comment"># make sure all komodod / iguana processes are stopped</span>
+<span class="token builtin class-name">cd</span> ~/komodo/src/
+<span class="token function">git</span> pull
+<span class="token function">make</span> -j8
+<span class="token builtin class-name">cd</span> ~/.komodo/
+<span class="token function">mv</span> komodo.conf <span class="token punctuation">..</span>/
+<span class="token function">mv</span> wallet.dat <span class="token punctuation">..</span>/
+<span class="token function">rm</span> -rf *
+<span class="token function">mv</span> <span class="token punctuation">..</span>/komodo.conf <span class="token builtin class-name">.</span>
+<span class="token function">mv</span> <span class="token punctuation">..</span>/wallet.dat <span class="token builtin class-name">.</span>
+<span class="token builtin class-name">cd</span> <span class="token punctuation">..</span>
+./start
+<span class="token comment"># wait for resync</span>
+<span class="token builtin class-name">cd</span> ~/dPoW/iguana/
+./m_notary
+<span class="token comment"># Wait a couple minutes</span>
+<span class="token builtin class-name">cd</span> ~/komodo/src/
+./assetchains
+./fiat-cli importprivkey U****** <span class="token punctuation">(</span>Komodo wif<span class="token punctuation">)</span>
+<span class="token comment"># wait for it to finish</span>
+./assetfunds btcd address
+./fiat-cli stop
+./assetchains
+</code></pre></div><h2 id="here-is-how-i-fixed-my-nodes-to-work-with-smart-chains"><a href="#here-is-how-i-fixed-my-nodes-to-work-with-smart-chains" class="header-anchor">#</a> Here is how I fixed my nodes to work with Smart Chains</h2> <ol><li><p>Reboot the server</p></li> <li><p>Update Komodo</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> komodo <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> fetch <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> checkout beta <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> pull <span class="token operator">&amp;&amp;</span> <span class="token function">make</span> -j8
+</code></pre></div><ol><li>Delete data files from the <code>.komodo</code> folder</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/.komodo
+<span class="token function">rm</span> -rf blocks chainstate debug.log komodostate db.log
+</code></pre></div><ol><li>Start the ./start script to resync the Komodo chain</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span>
+./start
+</code></pre></div><ol><li><p>Wait till resync is done, this time it is a lot faster</p></li> <li><p>Go to ~/komodo/src</p></li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ~/komodo/src
+</code></pre></div><ol><li>Edit clearassets and delete everything in it</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">vi</span> clearassets <span class="token punctuation">(</span>and delete everything <span class="token keyword">in</span> it<span class="token punctuation">)</span>
+</code></pre></div><ol><li>And paste the following in it:</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">rm</span> -rf ~/.komodo/REVS
+<span class="token function">rm</span> -rf ~/.komodo/SUPERNET
+<span class="token function">rm</span> -rf ~/.komodo/DEX
+<span class="token function">rm</span> -rf ~/.komodo/PANGEA
+<span class="token function">rm</span> -rf ~/.komodo/JUMBLR
+<span class="token function">rm</span> -rf ~/.komodo/BET
+<span class="token function">rm</span> -rf ~/.komodo/CRYPTO
+<span class="token function">rm</span> -rf ~/.komodo/HODL
+<span class="token function">rm</span> -rf ~/.komodo/MSHARK
+<span class="token function">rm</span> -rf ~/.komodo/BOTS
+<span class="token function">rm</span> -rf ~/.komodo/MGW
+<span class="token function">rm</span> -rf ~/.komodo/COQUI
+<span class="token function">rm</span> -rf ~/.komodo/WLC
+<span class="token function">rm</span> -rf ~/.komodo/KV
+<span class="token function">rm</span> -rf ~/.komodo/CEAL
+<span class="token function">rm</span> -rf ~/.komodo/MESH
+<span class="token function">rm</span> -rf ~/.komodo/MNZ
+<span class="token function">rm</span> -rf ~/.komodo/AXO
+<span class="token function">rm</span> -rf ~/.komodo/ETOMIC
+<span class="token function">rm</span> -rf ~/.komodo/BTCH
+<span class="token function">rm</span> -rf ~/.komodo/PIZZA
+<span class="token function">rm</span> -rf ~/.komodo/BEER
+<span class="token function">rm</span> -rf ~/.komodo/VOTE2018
+<span class="token function">rm</span> -rf ~/.komodo/NINJA
+<span class="token function">rm</span> -rf ~/.komodo/OOT
+<span class="token function">rm</span> -rf ~/.komodo/BNTN
+<span class="token function">rm</span> -rf ~/.komodo/CHAIN
+<span class="token function">rm</span> -rf ~/.komodo/PRLPAY
+</code></pre></div><ol><li>Save it and run clearassets</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>./clearassets
+</code></pre></div><ol><li>Run Smart Chains</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>./assetchains
+</code></pre></div><ol><li>Wait for it till it stops doing its thing. The import your BTCDwif key</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>./fiat-cli importprivkey U*************************** <span class="token punctuation">(</span>your BTCDwif key<span class="token punctuation">)</span>
+</code></pre></div><ol><li>After it is finished, fund your assets with your BTCD address</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>./assetfunds R********************* <span class="token punctuation">(</span>your BTCD address<span class="token punctuation">)</span>
+</code></pre></div><ol><li>When that is done, start notarizing</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span>
+<span class="token builtin class-name">cd</span> dPoW/iguana
+<span class="token function">git</span> fetch <span class="token operator">&amp;&amp;</span> <span class="token function">git</span> checkout master <span class="token operator">&amp;&amp;</span> ./m_notary
+</code></pre></div><ol><li>When this is done you should get the following running all the time</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code>GOT DEX PACKET.1079
+</code></pre></div><ol><li>Wait half an hour and somewhere in your iguana output you should see the following:</li></ol> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token punctuation">[</span><span class="token number">45</span><span class="token punctuation">]</span> ips.55 KMD NOTARIZE.11 matches.17 paxmatches.34 bestmatches.7 bestk.13 <span class="token number">1820251030003000</span> recv.fd37ffd5fb183f70 sigmasks.<span class="token punctuation">(</span><span class="token number">0</span> <span class="token number">0</span><span class="token punctuation">)</span> senderind.9 state.0 <span class="token punctuation">(</span>98349c0d <span class="token number">0</span> <span class="token number">0</span><span class="token punctuation">)</span> pax.dfc61f91
+</code></pre></div><ol><li>When you see pax.dfc61f91 you are ready!!!</li></ol></div> <footer class="page-edit"><div class="edit-link"><a href="https://github.com/komodoplatform/Documentation/edit/master/docs/notary/smartchains-guide-Komodo-Notary-Node.md" target="_blank" rel="noopener noreferrer">Suggest an improvement for this page</a> <span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></div> <div class="last-updated"><span class="prefix">Last Updated:</span> <span class="time">a year ago</span></div></footer> <!----> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.ad3c4262.js" defer></script><script src="/assets/js/5.f54d08db.js" defer></script><script src="/assets/js/3.a7c42d7c.js" defer></script><script src="/assets/js/231.413a945b.js" defer></script>
+  </body>
+</html>
